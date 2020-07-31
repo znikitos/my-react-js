@@ -1,7 +1,16 @@
 import React from "react";
 
-const Button = ({ num }) => {
-  return <h1>{num}</h1>;
+const Button = ({ index, increment }) => {
+  return (
+    <button
+      type="button"
+      onClick={() => {
+        increment();
+      }}
+    >
+      {index}
+    </button>
+  );
 };
 
 export default Button;
